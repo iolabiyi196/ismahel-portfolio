@@ -8,7 +8,7 @@ This webpgage has been designed with the motive of showing my portfolio to emplo
 * CSS
 
 ## Mock up of finished portfolio page
-![mock up of completed portfolio](.assets/images/mockup)
+![mock up of completed portfolio](./assets/images/mock-up.gif)
 
 ## Website
 https://iolabiyi196.github.io/ismahel-portfolio/
