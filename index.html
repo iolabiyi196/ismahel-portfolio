@@ -12,7 +12,7 @@
 <body>
     <!-- header section -->
     <header>
-        <h1>
+        <h1 id="top">
             <a href="/">Lernantino</a>
         </h1>
         <!-- adding navigation links -->
@@ -28,21 +28,23 @@
                 <li>
                     <a href="#contact-me">Contact Me</a>
                 </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
             </ul>
         </nav>
     </header>
     <!-- end header section -->
 
+    <!-- subsequent header section -->
+    <div class="container">
+        <h2 class="sub">Cool subtitle here!</h2>
+    </div>
+
+    <!-- portfolio sections -->
     <section>
-        <div class="container">
-            <h2 class="sub">Cool subtitle here!</h2>
-        </div>
-        <div>
-            <h2>About Me</h2>
-            <article>
+        <div class="sections">
+            <div>
+                <h2 class="section-title" id="about-me">About Me</h2>
+            </div>
+            <div class="subsection">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem ipsum dolor
@@ -50,7 +52,7 @@
                     sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit?
-                </p>
+                </p><br/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem
                     ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem
                     ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem
@@ -58,43 +60,44 @@
                     ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit? Lorem
                     ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptas earum? Odio, quidem sint! Ducimus, voluptates quia recusandae molestias aliquid neque, est dignissimos esse ex, dolor inventore eius accusantium suscipit?
                 </p>
-            </article>
+            </div>
         </div>
-    </section>
-    <section>
-        <div>
-            <h2>Work</h2>
+
+        <div class="sections">
             <div>
-                <img src="http://placehold.it/" alt="placeholder" />
+                <h2 class="section-title" id="work">Work</h2>
             </div>
-            <div>
-                <img src="http://placehold.it/" alt="placeholder" />
+            <!-- screenshot of work history -->
+            <div clas="subsection">
+                <img id="single-width" src="assets/images/html.png" alt="placeholder" /> <br />
+                <img id="double-width" src="assets/images/css.png" alt="placeholder" />
+                <img id="double-width" src="assets/images/js.png" alt="placeholder" /><br />
+                <img id="double-width" src="assets/images/git.png" alt="placeholder" />
+                <img id="double-width" src="assets/images/mern.png" alt="placeholder" />
             </div>
+
+        </div>
+        <div class="sections">
             <div>
-                <img src="http://placehold.it/" alt="placeholder" />
+                <h2 class="section-title" id="contact-me">Contact Me</h2>
             </div>
-            <div>
-                <img src="http://placehold.it/" alt="placeholder" />
-            </div>
-            <div>
-                <img src="http://placehold.it/" alt="placeholder" />
+
+            <!-- my contact info -->
+            <div class="contact-info subsection">
+                <ul>
+                    <li><a href="http://">555.555.5555</a></li>
+                    <li><a href="http://www.github.com/iolabiyi196">iolabiyi@website.com</a></li>
+                    <li><a href="http://www.github.com/iolabiyi196">GitHub</a></li>
+                    <li><a href="http://www.github.com/iolabiyi196">Twitter</a></li>
+                    <li><a href="http://www.github.com/iolabiyi196">Spotify</a></li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- footer section -->
     <footer>
-        <div>Contact Me</div>
-        <!-- my contact info -->
-        <div>
-            <ul>
-                <li>555.555.5555</li>
-                <li>iolabiyi@website.com</li>
-                <li>GitHub</li>
-                <li>Twitter</li>
-                <li>Spotify</li>
-            </ul>
-        </div>
+        <a href="#top">Go to Top</a>
     </footer>
     <!-- end footer section -->
 </body>
