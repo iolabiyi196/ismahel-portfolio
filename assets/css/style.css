@@ -1,0 +1,54 @@
+/* remove margin and padding from all elements on page load */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* apply the body's design style */
+
+body {
+    background-color: orange;
+    font-family: helvetica, arial, sans-serif;
+}
+
+
+/* style the header section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background-color: #535c68;
+}
+
+h1 {
+    padding-left: 50px;
+    padding-right: 5px;
+    height: 50px;
+    background-color: #c7ecee;
+}
+
+#nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 5px;
+}
+
+#nav-items li {
+    margin: 0 30px;
+    font-size: 25px;
+}
+
+.container {
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
