@@ -18,7 +18,7 @@
 /* apply the body's design style */
 
 body {
-    background-color: orange;
+    background-color: beige;
     font-family: helvetica, arial, sans-serif;
 }
 
@@ -102,7 +102,6 @@ h1 {
     color: var(--main-color);
     text-decoration: underline;
     margin: 0 30px;
-    font-size: 30px;
 }
 
 #contact-me {
@@ -130,19 +129,42 @@ h1 {
     flex-wrap: wrap;
 }
 
-
-/* 
-#contact-me {
-    width: 60%; */
-
-
-/* }
-.work-history {
-    display: flex;
-    padding-left: 20px;
-} */
-
 footer {
     text-align: center;
     font-size: 60px;
+}
+
+@media screen and (max-width: 980px) {
+    #nav-items {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    header {
+        align-items: center;
+    }
+    h1 {
+        align-items: center;
+    }
+    #nav-items {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-title {
+        text-align: left;
+    }
+    .sections {
+        flex-direction: column;
+    }
+    .subsection {
+        padding-left: 0;
+        border: 0;
+        margin-left: 0;
+    }
+    .contact-info li {
+        flex-direction: column;
+        font-size: 20px;
+        margin: 0;
+    }
 }
